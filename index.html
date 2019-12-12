@@ -156,7 +156,7 @@ input::-webkit-input-placeholder {
     margin-top: 2.5px;
 }
 #content .content-box {
-    padding-top: 51px
+    padding-top: 100px
 }
 .content-box {
     max-width: 1200px;
@@ -273,57 +273,48 @@ input::-webkit-input-placeholder {
     color: #5d5d5d;
 }
 
-@media (min-width: 992px) {
-    header {
-        height: 60px;
-        border-bottom: 1px solid #e8e8e8;
+@media (min-width: 768px) {
+    .col, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        padding: 0 10px
     }
-    header .main {
-        padding: 0 22px;
-    }
-    header .logo {
-        float: left;
-        font-size: 22px;
-        margin: 0;
-        font-weight: 400;
-        border: none;
-    }
-    header .logo a {
-        display: block;
-        line-height: 50px;
-        color: #484848;
-        font-weight: 400;
-    }
-    header .logo img {
-        width: 30px;
-        vertical-align: -10px;
-    }
-    header .nav {
-        float: left;
-        margin-left: 25px;
+    #content .main {
         padding-top: 0px;
-        height: 100%;
+    }
+    .sousuo {
+        padding: 10px 0 50px 0;
+        margin-top: 0;
+    }
+    .sousuo-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #input {
+        outline: none;
+        padding: 0 10px;
+        height: 46px;
+        line-height: 46px;
+        border: 1px solid #ccc;
+        border-left: none;
         display: block;
-        overflow: hidden;
-        position: static;
-        width: auto;
-        box-shadow: none;
+        padding-left: 90px;
     }
-    header .nav li {
-        float: left;
-        font-size: 16px;
+    .link-box {
+        width: 12.5%;
+        float: left
     }
-    header .nav a {
-        display: block;
-        line-height: 59px;
-        color: #959595;
-        padding: 0 18px;
-        border-bottom: 1px solid #e8e8e8;
+    .item-tit > strong {
+        padding: 5px 0 0 10px;
+        margin-bottom: 10px;
     }
-    header .nav a:hover {
-        border-color: #459df5;
-        color: #459df5;
+    .get-home {
+        margin: 0;
+        margin-top: 20px;
     }
+    .footer {
+        margin-top: 20px;
+    }
+}
+@media (min-width: 992px) {
     .tree-menu li li a {
         color: #797979;
         font-size: 14px;
@@ -368,8 +359,27 @@ input::-webkit-input-placeholder {
         margin-top: 30px;
     }
 }
-
-
+@media (min-width: 1200px) {
+    .content-box {
+        padding: 0 20px;
+    }
+    .sousuo-form {
+        width: 60%
+    }
+    .item > .container-fluid {
+        padding: 0;
+        padding-top: 91px;
+        margin-top: -65px;
+    }
+}
+@media (min-width: 1700px) {
+    .content-box {
+        max-width: 1400px;
+    }
+    .col-md-3 {
+        width: 20%;
+    }
+}
 </style>
 </head>
 <body id="nav_body">
