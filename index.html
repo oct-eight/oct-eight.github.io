@@ -9,6 +9,7 @@
 <meta name="keywords" content="菓子屋,首页,搜索,导航"/>
 <meta name="description" content="首页搜索导航"/>
 
+<!--百度统计-->
 <script>
   var _hmt = _hmt || [];
   (function() {
@@ -185,93 +186,6 @@ input::-webkit-input-placeholder {
     margin-right: 5px;
     font-size: 18px;
 }
-.card-link {
-    display: block;
-    padding: 10px 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 10px;
-    background: #fff;
-    transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-   /* Firefox 4 */
-    -webkit-transition: all 0.2s ease-out;
-   /* Safari Chrome */
-    -o-transition: all 0.2s ease-out;
-   /* Opera */
-}
-.card-link:hover {
-    transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-   /* IE 9 */
-    -moz-transform: translateY(-5px);
-   /* Firefox */
-    -webkit-transform: translateY(-5px);
-   /* Safari  Chrome */
-    -o-transform: translateY(-5px);
-   /* Opera */
-    box-shadow: 4px 4px 10px rgba(204, 204, 204, 0.5);
-    -moz-box-shadow: 4px 4px 10px rgba(204, 204, 204, 0.5);
-   /* Firefox */
-}
-.card-tit {
-    height: 20px;
-    font-size: 14px;
-    font-weight: 700;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-}
-.card-tit img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 5px;
-}
-.card-desc {
-    color: gray;
-    font-size: 12px;
-    padding-top: 10px;
-    height: 45px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-}
-.content-box .list-box {
-    background: #FFF;
-    padding: 20px 10px 0px 10px;
-    margin: 0;
-}
-#get-top {
-    width: 40px;
-    height: 40px;
-    background: #03b8cf;
-    color: #FFF;
-    position: fixed;
-    right: 15px;
-    bottom: 55px;
-    line-height: 30px;
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-    z-index: 100;
-}
-#get-top i {
-    margin: 0;
-    font-size: 20px;
-}
-.footer {
-    padding: 15px 20px 10px 20px;
-    border-top: 1px solid #d0d0d0;
-    background-color: #e8e8e8;
-    text-align: center;
-    font-size: 14px;
-    color: #5d5d5d;
-}
 
 @media (min-width: 768px) {
     .col, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -306,14 +220,8 @@ input::-webkit-input-placeholder {
         padding: 5px 0 0 10px;
         margin-bottom: 10px;
     }
-    .get-home {
-        margin: 0;
-        margin-top: 20px;
-    }
-    .footer {
-        margin-top: 20px;
-    }
 }
+
 @media (min-width: 992px) {
     .tree-menu li li a {
         color: #797979;
@@ -343,22 +251,8 @@ input::-webkit-input-placeholder {
     .item > .container-fluid .row {
         padding: 0;
     }
-    .card-box .col-md-3 {
-        padding: 0 7.5px;
-    }
-    .card-link {
-        margin-bottom: 15px;
-    }
-    .main .list-box .menu-list {
-        margin: 0px 10px 20px 10px;
-    }
-    .nav-tabs > li > a {
-        padding: 4px 15px;
-    }
-    .footer {
-        margin-top: 30px;
-    }
 }
+
 @media (min-width: 1200px) {
     .content-box {
         padding: 0 20px;
@@ -372,6 +266,7 @@ input::-webkit-input-placeholder {
         margin-top: -65px;
     }
 }
+
 @media (min-width: 1700px) {
     .content-box {
         max-width: 1400px;
@@ -382,8 +277,8 @@ input::-webkit-input-placeholder {
 }
 </style>
 </head>
-<body id="nav_body">
 
+<body id="nav_body">
 <div id="content">
     <div class="main">
         <div class="container content-box">
@@ -398,7 +293,7 @@ input::-webkit-input-placeholder {
                 <!-- 搜索引擎 -->
                 <div class="search-engine">
                     <div class="search-engine-head">
-                        <strong class="search-engine-tit">请选择搜索引擎：</strong>
+                        <strong class="search-engine-tit"><a href="https://user.qzone.qq.com/859035570"><img src="./guoziwu.ico" alt="Smiley face" width="14" height="14"></a>请选择：</strong>
                     </div>
                     <ul class="search-engine-list">
                     </ul>
@@ -408,28 +303,11 @@ input::-webkit-input-placeholder {
         </div>
         <!--内容区域-->
     </div>
-    <div id="get-top" title="回到顶部">
-        <i class="icon icon-arrow-up"></i>
-    </div>
 
     <!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 <script>
-window.onscroll = function(){
-//回到顶部
-var sllTop = document.documentElement.scrollTop||document.body.scrollTop;
-if(sllTop>240){
-  $('#get-top').css('display','block')
-}else{
-  $('#get-top').css('display','none')
-}
-}
-$('#get-top').click(function(){
-  $('body,html').animate({
-    scrollTop: 0
-  }, 800);//点击回到顶部按钮，数字越小越快
-})
 //判断用户使用的设备
 var deviceVal  = browserRedirect();
 function browserRedirect() {
