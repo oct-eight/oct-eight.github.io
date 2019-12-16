@@ -386,9 +386,11 @@ $(function(){
 })
 $("#search-btn").click(function(){
   var textValue = $('#txt').val();
-  if(textValue != ''){
+  if(textValue != '')
+  {
     window.open(thisSearch + textValue)
-  } else {
+  } else if (textValue = '')
+  {
     window.open('http://blog.guoziwu.com/')
   }
 });
