@@ -313,8 +313,10 @@ function browserRedirect() {
   });
 var thisSearch = 'https://www.baidu.com/s?wd=';
 $('#txt').keydown(function(ev){
-    if(ev.keyCode==13){
-        window.open(thisSearch + $('#txt').val())
+    if(ev.keyCode==13) {
+        if($('#txt').val() != '') {
+            window.open(thisSearch + $('#txt').val())
+        } else {window.open('http://blog.guoziwu.com/')}
         $('#box ul').html('')
     }
 })
@@ -386,13 +388,9 @@ $(function(){
 })
 $("#search-btn").click(function(){
   var textValue = $('#txt').val();
-  if(textValue != '')
-  {
+  if(textValue != '') {
     window.open(thisSearch + textValue)
-  } else if (textValue == '')
-  {
-    window.open('http://blog.guoziwu.com/')
-  }
+  } else {window.open('http://blog.guoziwu.com/')}
 });
 </script>
 </div>
